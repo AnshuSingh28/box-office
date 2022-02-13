@@ -1,3 +1,5 @@
+/* eslint-disable prefer-template */
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable no-restricted-globals */
 
 // This service worker can be customized!
@@ -7,10 +9,15 @@
 // You can also remove this file if you'd prefer not to use a
 // service worker, and the Workbox build step will be skipped.
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { clientsClaim } from 'workbox-core';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { ExpirationPlugin } from 'workbox-expiration';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { registerRoute } from 'workbox-routing';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { StaleWhileRevalidate } from 'workbox-strategies';
 
 clientsClaim();
